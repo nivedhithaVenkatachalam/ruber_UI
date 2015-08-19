@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+      
+      <!-- Latest compiled and minified jQuery library CDN -->
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      
+      <!-- Latest compiled and minified CSS for Bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Optional Bootstrap theme (Recommended) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript for Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+  </head>
+  <!--body background="/images/meet.jpg"-->
+  <body background="/images/test5.jpg">
+      <img src="/images/logo1.png" alt="Logo" style="width:95px;height:75px;">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Ruber</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li id="p2"><a href="/home">Home </a></li>
+                <li id="p2"><a href="#">Product</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li id="p2"><a href="#">About Us</a></li>
+                <li class="dropdown" id="p2">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More info <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Free Trial</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      
+                  
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+    <form name="feedback" action="/registerExpertUser" method="post" onsubmit="return checkform()">
+          <div class="panel panel-default " id="panel">
+              <div class="col-md-3 col-lg-3 " align="left"> </div>
+            <div class="panel-body">
+              <div class="row">
+                <h2 class="risk">Expert Registration</h2>
+                <h3 id="p1" > &nbsp;&nbsp;Sign up! </h3>
+                <div class=" col-md-9 col-lg-9 "> 
+                 <br/><br/> 
+    <p id="p1">
+      First Name<span style="color:red;" id="p1">*</span>
+                  </p>
+    <input type="text" name="firstname" value="" id="firstname" size="50" width="300px" required placeholder="First Name"></input>
+
+    <br/><br/> 
+    <p id="p1">
+      Last Name<span style="color:red;" id="p1">*</span>
+                  </p>
+    <input type="text" name="lastname" value="" id="lastname" size="50" width="300px" required placeholder="Last Name"></input>
+
+    <br/><br/> 
+                 <p id="p1">
+      Email ID<span style="color:red;" id="p1">*</span>
+                  </p>
+    <input type="text" name="emailid" value="" id="emailid" size="50" width="300px" required placeholder="Email ID"></input>
+
+    <br/><br/> <p id="p1">
+      Password<span style="color:red;" id="p1">*</span>
+                  </p>
+    <input type="password" name="password" value="" id="password" size="50" width="300px" required placeholder="Password"></input>
+        <br/><br/> <p id="p1">
+      Confirm Password<span style="color:red;" id="p1">*</span>
+                  </p>
+    <input type="password" name="confirm-password" value="" id="confirm-password" size="50" width="300px" required placeholder="Confirm Password"></input>
+        <br/><br/>
+        <p id="p1">
+      Name of your Corporate<span style="color:red;" id="p1">*</span>
+         </p>
+    <input type="text" name="corporate" value="" id="corporate" size="50" width="300px" required placeholder="Company Name"></input>
+    <br/><br/><p id="p1"><b>
+      Billing Address: </b>&nbsp;</p>
+    <!--<textarea name="address" value="" id="address" rows="3" cols="50" placeholder="Optional"></textarea>-->
+    <p id="p1">Street Number<span style="color:red;" id="p1">*</span> &nbsp; </p>
+    <input type="text" name="streetnumber" value="" id="streetnumber" size="50" width="300px" required placeholder="Street Number" ></input>
+    <p id="p1">Street Name<span style="color:red;" id="p1">*</span> &nbsp;</p>
+    <input type="text" name="streetname" value="" id="streetname" size="50" width="300px" required placeholder="Street Name" ></input>
+    <p id="p1">City<span style="color:red;" id="p1">*</span>&nbsp;</p>
+    <input type="text" name="majormunicipality" value="" id="majormunicipality" size="50" width="300px" required placeholder="Town/City" ></input>
+    <p id="p1">Postal Code<span style="color:red;" id="p1">*</span>&nbsp;</p>
+    <input type="text" name="postalcode" value="" id="postalcode" size="50" width="300px" required placeholder="Postal Code/Zip/Postcode" ></input>
+    <p id="p1">Country<span style="color:red;" id="p1">*</span>&nbsp;</p>
+    <input type="text" name="country" value="" id="country" size="50" width="300px" required placeholder="Country" ></input>
+    <p id="p1">Bank Name<span style="color:red;" id="p1">*</span>&nbsp;</p>
+    <input type="text" name="bankname" value="" id="bankname" size="50" width="300px" required placeholder="Bank Name"></input>
+    <p id="p1">Account Number<span style="color:red;" id="p1">*</span>&nbsp;</p>
+    <input type="text" name="accountnumber" value="" id="accountnumber" size="50" width="300px" required placeholder="Account Number"></input>
+    <p id="p1">Routing Number<span style="color:red;" id="p1">*</span>&nbsp;</p>
+    <input type="text" name="routingnumber" value="" id="routingnumber" size="50" width="300px" required placeholder="Routing Number"></input>
+    <!--<p id="p1">Street Number Suffix &nbsp;</p>
+    <input type="text" name="streetnumbersuffix" value="" id="streetnumbersuffix" size="50" width="300px" placeholder="Street Number Suffix" ></input>
+    
+    <p id="p1">Street Type &nbsp;</p>
+    <input type="text" name="streettype" value="" id="streetype" size="50" width="300px" placeholder="Street, Road, Place etc." ></input>
+    <p id="p1">Street Direction &nbsp;</p>
+    <input type="text" name="streetdirection" value="" id="streetdirection" size="50" width="300px" placeholder="N, NE, E, SE, S, SW, W, NW" ></input>
+    <p id="p1">Address Type &nbsp;</p>
+    <input type="text" name="addresstype" value="" id="addresstype" size="50" width="300px" placeholder="Apartment, Suite, Office" ></input>
+    <p id="p1">Address Type Identifier&nbsp;</p>
+    <input type="text" name="addresstypeidentifier" value="" id="addresstypeidentifier" size="50" width="300px" placeholder="Apartment number" ></input>
+    <p id="p1">Minor Municipality&nbsp;</p>
+    <input type="text" name="minormunicipality" value="" id="minormunicipality" size="50" width="300px" placeholder="Village/Hamlet" ></input>
+    
+    <p id="p1">Governing District&nbsp;</p>
+    <input type="text" name="governingdistrict" value="" id="governingdistrict" size="50" width="300px" placeholder="Province, State, County" ></input>-->
+    
+                 
+    <br/><br/><p id="p1">
+      Mobile Number<span style="color:red;" id="p1">*</span>
+                  </p>
+    <input type="text" name="mobile" value="" id="mobile" size="50" width="300px" required placeholder="Mobile Number"></input>
+    <br/><br/><p id="p1">
+      Phone Number
+                  </p>
+    <input type="text" name="phone" value="" id="phone" size="50" width="300px" placeholder="Phone Number"></input>
+                </div>
+              </div>
+              <br/>
+                <div class="col-md-3 col-lg-3 " align="middle">
+                   <div class="btn-group" role="group">
+                     <button type="submit" class="btn btn-success btn-block" id="p1"> Register</button>
+                  </div>
+              </div> 
+          </div>
+          <p id="p1">&nbsp;&nbsp;<span style="color:red;" id="p1">*</span> - Required Fields</p>
+          </div>
+          
+  </form>
+        </div>
+</div>  
+  </body>
+</html>
+<script type="text/javascript">
+  function checkform(){
+    var letters = /^[a-zA-Z]+$/;
+    var val_email=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var numbers = /^[0-9]+$/;
+    var el=document.feedback.address;
+    if(!document.feedback.firstname.value.match(letters))
+    {
+    alert('Please input alpha characters only for firstname');
+    document.feedback.firstname.focus();
+    return false;
+    }
+    else if(!document.feedback.lastname.value.match(letters))
+    {
+    alert('Please input alphabets only for lastname');
+    document.feedback.lastname.focus();
+    return false;
+    }
+    else if (!val_email.test(document.feedback.emailid.value))  
+    {  
+      alert("You have entered an invalid email address!"); 
+      document.feedback.emailid.focus(); 
+      return false;  
+    } 
+    else if(el.checked)
+    {
+      if(!document.feedback.streetnumber.value.match(numbers))
+      {
+        alert("Street Number can contain only numbers!"); 
+        document.feedback.streetnumber.focus(); 
+      return false;
+      }
+      else if (!document.feedback.streetname.value.match(letters)) 
+      {
+          alert("Enter a valid street name!");
+          document.feedback.streetname.focus();
+      return false;
+
+      }
+      else if (!document.feedback.majormunicipality.value.match(letters))
+      {
+        alert("Value can contain alphabets only!"); 
+        document.feedback.majormunicipality.focus(); 
+      return false;
+      }
+      else if (!document.feedback.postalcode.value.match(numbers))
+      {
+        alert("Enter a valid postal code!"); 
+        document.feedback.postalcode.focus(); 
+      return false;
+      }
+      else if (!document.feedback.country.value.match(letters)) 
+      {
+       alert("Country name can only contain alphabets!");
+       document.feedback.country.focus();  
+      return false;   
+      } 
+    }
+    else if(!document.feedback.phone.value.match(numbers))
+    {
+      alert("Please enter a valid phone number");
+      document.feedback.phone.focus();
+      return false; 
+    }
+    else if(!document.feedback.mobile.value.match(numbers))
+    {
+      alert("Please enter a valid mobile number");
+      document.feedback.mobile.focus();
+      return false; 
+    }
+
+    /*else if (!document.feedback.password.value.match(document.feedback.confirm-password.value))
+    {
+      alert('Passwords do not match. Please re-enter password. ');
+    document.feedback.confirm-password.focus();
+    return false;
+    }*/
+    return true;
+  }
+  /*function setMandatoryFields(){
+    var el=document.feedback.address;
+    if(el.checked)
+    {
+      document.feedback.streetnumber.disabled=false;
+      document.feedback.streetnumbersuffix.disabled=false;
+      document.feedback.addresstype.disabled=false;
+      document.feedback.addresstypeidentifier.disabled=false;
+      document.feedback.streetname.disabled=false;
+      document.feedback.streettype.disabled=false;
+      document.feedback.streetdirection.disabled=false;
+      document.feedback.minormunicipality.disabled=false;
+      document.feedback.majormunicipality.disabled=false;
+      document.feedback.governingdistrict.disabled=false;
+      document.feedback.postalcode.disabled=false;
+      document.feedback.country.disabled=false;
+    }
+    else
+    {
+      document.feedback.streetnumber.disabled=true;
+      document.feedback.streetnumbersuffix.disabled=true;
+      document.feedback.addresstype.disabled=true;
+      document.feedback.addresstypeidentifier.disabled=true;
+      document.feedback.streetname.disabled=true;
+      document.feedback.streettype.disabled=true;
+      document.feedback.streetdirection.disabled=true;
+      document.feedback.minormunicipality.disabled=true;
+      document.feedback.majormunicipality.disabled=true;
+      document.feedback.governingdistrict.disabled=true;
+      document.feedback.postalcode.disabled=true;
+      document.feedback.country.disabled=true;
+    }
+
+  }*/
+</script>

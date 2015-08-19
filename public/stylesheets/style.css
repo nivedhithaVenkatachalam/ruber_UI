@@ -1,0 +1,35 @@
+body {
+  padding: 25px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+h2.risk{
+	font-family:"Arial", sans-serif ;
+	color: white;
+	text-align:center;
+	opacity: 0.8;
+	font-weight: bold;
+		
+}
+#p1 {
+	font-size: 150%;
+	color: white;
+	opacity: 0.8;
+}
+#p2 {
+	font-size: 120%;
+	color: white;
+	opacity: 0.8;
+}
+a {
+  color: #00B7FF;
+}
+
+#panel{
+	border-radius: 25px;
+	background-color: rgba(128,0,128,0.4);
+
+}
+#hh{
+	color:purple;
+}
+
